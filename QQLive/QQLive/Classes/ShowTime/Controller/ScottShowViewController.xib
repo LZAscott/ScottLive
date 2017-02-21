@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScottShowViewController">
+            <connections>
+                <outlet property="messageLabel" destination="puR-JZ-XLk" id="gs0-YX-Zs2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oz-LP-drq">
+                    <rect key="frame" x="20" y="30" width="190" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.15367353719999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="190" id="qDG-ti-oCH"/>
+                        <constraint firstAttribute="height" constant="30" id="qq1-bK-bwL"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="智能美颜已经开启" image="icon_beautifulface_19x19"/>
+                    <connections>
+                        <action selector="beautifulBtnClick:" destination="-1" eventType="touchUpInside" id="vWl-F5-Kdj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grg-DV-Ge5">
+                    <rect key="frame" x="255" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="RxU-3u-Dgz"/>
+                        <constraint firstAttribute="height" constant="40" id="TUq-7p-yDd"/>
+                    </constraints>
+                    <state key="normal" image="camera_change_40x40"/>
+                    <connections>
+                        <action selector="toggleCameraClick:" destination="-1" eventType="touchUpInside" id="bKy-Z4-8hR"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnY-7u-FOg">
+                    <rect key="frame" x="315" y="25" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="0D5-zC-5eu"/>
+                        <constraint firstAttribute="height" constant="40" id="Kcu-18-zLg"/>
+                    </constraints>
+                    <state key="normal" image="talk_close_40x40"/>
+                    <connections>
+                        <action selector="backBtnClick:" destination="-1" eventType="touchUpInside" id="IvT-Wp-LLC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctP-kt-v3m">
+                    <rect key="frame" x="40" y="567" width="295" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="cQ4-Rt-yei"/>
+                    </constraints>
+                    <state key="normal" title="开始直播">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startShowBtnClick:" destination="-1" eventType="touchUpInside" id="mYd-Fl-sce"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puR-JZ-XLk">
+                    <rect key="frame" x="166" y="80" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="puR-JZ-XLk" firstAttribute="top" secondItem="5oz-LP-drq" secondAttribute="bottom" constant="20" id="3Wx-G8-sp8"/>
+                <constraint firstItem="puR-JZ-XLk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EP6-XP-rtq"/>
+                <constraint firstAttribute="bottom" secondItem="ctP-kt-v3m" secondAttribute="bottom" constant="60" id="ExD-1h-m8E"/>
+                <constraint firstItem="5oz-LP-drq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Tq8-hs-NNG"/>
+                <constraint firstItem="5oz-LP-drq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="Xlh-be-K4l"/>
+                <constraint firstItem="cnY-7u-FOg" firstAttribute="centerY" secondItem="5oz-LP-drq" secondAttribute="centerY" id="mM5-y9-6KG"/>
+                <constraint firstItem="ctP-kt-v3m" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="n8C-TI-9fU"/>
+                <constraint firstAttribute="trailing" secondItem="cnY-7u-FOg" secondAttribute="trailing" constant="20" id="qq2-5X-0Kz"/>
+                <constraint firstAttribute="trailing" secondItem="ctP-kt-v3m" secondAttribute="trailing" constant="40" id="uOU-8f-G7b"/>
+                <constraint firstItem="cnY-7u-FOg" firstAttribute="leading" secondItem="grg-DV-Ge5" secondAttribute="trailing" constant="20" id="xC8-QW-LhT"/>
+                <constraint firstItem="cnY-7u-FOg" firstAttribute="centerY" secondItem="grg-DV-Ge5" secondAttribute="centerY" id="yyr-Jl-baP"/>
+            </constraints>
+            <point key="canvasLocation" x="53.5" y="95.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="camera_change_40x40" width="40" height="40"/>
+        <image name="icon_beautifulface_19x19" width="19" height="19"/>
+        <image name="talk_close_40x40" width="40" height="40"/>
+    </resources>
+</document>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9xC-Yh-oFr" customClass="ScottCatView">
+            <rect key="frame" x="0.0" y="0.0" width="98" height="98"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qWU-sM-Eeo">
+                    <rect key="frame" x="0.0" y="0.0" width="98" height="98"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="public_catEar_98x25" translatesAutoresizingMaskIntoConstraints="NO" id="yX6-Aj-JbO">
+                    <rect key="frame" x="0.0" y="0.0" width="98" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="lFV-lM-bWO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="yX6-Aj-JbO" firstAttribute="leading" secondItem="9xC-Yh-oFr" secondAttribute="leading" id="0Qn-ua-Wso"/>
+                <constraint firstItem="qWU-sM-Eeo" firstAttribute="leading" secondItem="9xC-Yh-oFr" secondAttribute="leading" id="3Gj-YB-UXf"/>
+                <constraint firstAttribute="bottom" secondItem="qWU-sM-Eeo" secondAttribute="bottom" id="4x8-HT-UtM"/>
+                <constraint firstItem="qWU-sM-Eeo" firstAttribute="top" secondItem="9xC-Yh-oFr" secondAttribute="top" id="K0S-RY-FeR"/>
+                <constraint firstItem="yX6-Aj-JbO" firstAttribute="top" secondItem="9xC-Yh-oFr" secondAttribute="top" id="SUp-Gk-MVj"/>
+                <constraint firstAttribute="trailing" secondItem="qWU-sM-Eeo" secondAttribute="trailing" id="bVA-IA-49M"/>
+                <constraint firstAttribute="trailing" secondItem="yX6-Aj-JbO" secondAttribute="trailing" id="rqf-KJ-h7E"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="playerView" destination="qWU-sM-Eeo" id="FA6-c8-TyY"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="44"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="public_catEar_98x25" width="98" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ScottNewCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_head" translatesAutoresizingMaskIntoConstraints="NO" id="Qwa-e1-KWM">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag_new_33x17_" translatesAutoresizingMaskIntoConstraints="NO" id="bJj-Oi-yMV">
+                        <rect key="frame" x="157" y="5" width="33" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="2u6-nU-dHO"/>
+                            <constraint firstAttribute="width" constant="33" id="fDs-SE-qtd"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9d-Fm-XFi">
+                        <rect key="frame" x="10" y="10" width="100" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="LL8-OV-L2q"/>
+                            <constraint firstAttribute="height" constant="12" id="p7j-qj-ea5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="深圳市" image="location_white_8x9_"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主播名字" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQQ-Jr-XvS">
+                        <rect key="frame" x="0.0" y="179" width="200" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bJj-Oi-yMV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="7QM-AY-JtI"/>
+                <constraint firstItem="cQQ-Jr-XvS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="CbK-2x-G3e"/>
+                <constraint firstAttribute="trailing" secondItem="Qwa-e1-KWM" secondAttribute="trailing" id="QBR-AY-EOv"/>
+                <constraint firstItem="Qwa-e1-KWM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="RuP-1d-6Te"/>
+                <constraint firstItem="K9d-Fm-XFi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="TXC-Si-0Lp"/>
+                <constraint firstAttribute="trailing" secondItem="cQQ-Jr-XvS" secondAttribute="trailing" id="bSB-Da-t1z"/>
+                <constraint firstAttribute="bottom" secondItem="Qwa-e1-KWM" secondAttribute="bottom" id="dJN-Tc-w43"/>
+                <constraint firstAttribute="trailing" secondItem="bJj-Oi-yMV" secondAttribute="trailing" constant="10" id="g8K-lS-FBX"/>
+                <constraint firstAttribute="bottom" secondItem="cQQ-Jr-XvS" secondAttribute="bottom" constant="5" id="gKR-4E-SFw"/>
+                <constraint firstItem="K9d-Fm-XFi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="qch-8e-RBE"/>
+                <constraint firstItem="Qwa-e1-KWM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="r4V-1i-PZg"/>
+            </constraints>
+            <connections>
+                <outlet property="adressBtn" destination="K9d-Fm-XFi" id="GVT-As-aJN"/>
+                <outlet property="bgImv" destination="Qwa-e1-KWM" id="d4S-Mc-uMf"/>
+                <outlet property="nickLabel" destination="cQQ-Jr-XvS" id="Dvd-Hj-siP"/>
+                <outlet property="stateImv" destination="bJj-Oi-yMV" id="j63-3y-Vrd"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="flag_new_33x17_" width="33" height="17"/>
+        <image name="location_white_8x9_" width="8" height="9"/>
+        <image name="placeholder_head" width="100" height="100"/>
+    </resources>
+</document>

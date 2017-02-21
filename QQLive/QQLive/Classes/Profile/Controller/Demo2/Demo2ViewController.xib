@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Demo2ViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hEL-Zw-l77">
+                    <rect key="frame" x="63" y="319" width="250" height="30"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="EKZ-9w-R0o"/>
+                        <constraint firstAttribute="height" constant="30" id="fVV-Ga-764"/>
+                    </constraints>
+                    <state key="normal" title="带textfield形式的alertView">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="textfieldAlertViewClick:" destination="-1" eventType="touchUpInside" id="Ikt-Sz-uzO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v2n-g1-n0E">
+                    <rect key="frame" x="63" y="379" width="250" height="30"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="默认形式的ActionSheet">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="defaultActionSheetClick:" destination="-1" eventType="touchUpInside" id="Ibc-nl-0U2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNe-Tk-oJ4">
+                    <rect key="frame" x="63" y="139" width="250" height="30"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="默认的alertView">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="defaultAlertViewClick:" destination="-1" eventType="touchUpInside" id="PEe-oj-NXX"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VpA-eH-YPF">
+                    <rect key="frame" x="63" y="439" width="250" height="30"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="自定义形式的ActionSheet">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="customActionSheetClick:" destination="-1" eventType="touchUpInside" id="6AP-C1-ctD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yes-EO-oma">
+                    <rect key="frame" x="63" y="259" width="250" height="30"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="背景模糊形式的alertView">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="effecBgAlertViewClick:" destination="-1" eventType="touchUpInside" id="iDQ-VW-Hdd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tiy-Km-Kdz">
+                    <rect key="frame" x="63" y="199" width="250" height="30"/>
+                    <color key="backgroundColor" red="0.97647058819999999" green="0.19215686269999999" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="自定义形式的alertView">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="customAlertViewClick:" destination="-1" eventType="touchUpInside" id="Ld6-Z5-swd"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="v2n-g1-n0E" firstAttribute="centerX" secondItem="RNe-Tk-oJ4" secondAttribute="centerX" id="1i5-jg-Ofq"/>
+                <constraint firstItem="v2n-g1-n0E" firstAttribute="top" secondItem="hEL-Zw-l77" secondAttribute="bottom" constant="30" id="3C0-xb-c7H"/>
+                <constraint firstItem="v2n-g1-n0E" firstAttribute="width" secondItem="RNe-Tk-oJ4" secondAttribute="width" id="780-Ee-nBE"/>
+                <constraint firstItem="Tiy-Km-Kdz" firstAttribute="height" secondItem="RNe-Tk-oJ4" secondAttribute="height" id="CUV-w9-3Ui"/>
+                <constraint firstItem="v2n-g1-n0E" firstAttribute="height" secondItem="RNe-Tk-oJ4" secondAttribute="height" id="Dhf-3w-Yo5"/>
+                <constraint firstItem="VpA-eH-YPF" firstAttribute="top" secondItem="v2n-g1-n0E" secondAttribute="bottom" constant="30" id="KPT-Yk-Fdu"/>
+                <constraint firstItem="VpA-eH-YPF" firstAttribute="width" secondItem="RNe-Tk-oJ4" secondAttribute="width" id="Kju-v0-hDb"/>
+                <constraint firstItem="Tiy-Km-Kdz" firstAttribute="width" secondItem="RNe-Tk-oJ4" secondAttribute="width" id="LFQ-zT-UE2"/>
+                <constraint firstItem="hEL-Zw-l77" firstAttribute="top" secondItem="Yes-EO-oma" secondAttribute="bottom" constant="30" id="Lcf-F5-yxm"/>
+                <constraint firstItem="hEL-Zw-l77" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MpG-TT-D5b"/>
+                <constraint firstItem="hEL-Zw-l77" firstAttribute="height" secondItem="RNe-Tk-oJ4" secondAttribute="height" id="Smp-WZ-UsR"/>
+                <constraint firstItem="hEL-Zw-l77" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Uc4-b5-bg7"/>
+                <constraint firstItem="Yes-EO-oma" firstAttribute="width" secondItem="RNe-Tk-oJ4" secondAttribute="width" id="UxP-gb-LmL"/>
+                <constraint firstItem="hEL-Zw-l77" firstAttribute="width" secondItem="RNe-Tk-oJ4" secondAttribute="width" id="Vvn-dW-iE5"/>
+                <constraint firstItem="Tiy-Km-Kdz" firstAttribute="top" secondItem="RNe-Tk-oJ4" secondAttribute="bottom" constant="30" id="Xbq-Ij-lMh"/>
+                <constraint firstItem="VpA-eH-YPF" firstAttribute="height" secondItem="RNe-Tk-oJ4" secondAttribute="height" id="b4Q-Th-XdY"/>
+                <constraint firstItem="Yes-EO-oma" firstAttribute="centerX" secondItem="RNe-Tk-oJ4" secondAttribute="centerX" id="b6A-pr-sNj"/>
+                <constraint firstItem="Yes-EO-oma" firstAttribute="top" secondItem="Tiy-Km-Kdz" secondAttribute="bottom" constant="30" id="eYT-vG-HMj"/>
+                <constraint firstItem="Yes-EO-oma" firstAttribute="height" secondItem="RNe-Tk-oJ4" secondAttribute="height" id="lSL-8I-3Vi"/>
+                <constraint firstItem="hEL-Zw-l77" firstAttribute="centerX" secondItem="RNe-Tk-oJ4" secondAttribute="centerX" id="pwi-ZF-bqD"/>
+                <constraint firstItem="VpA-eH-YPF" firstAttribute="centerX" secondItem="RNe-Tk-oJ4" secondAttribute="centerX" id="tR2-20-qVX"/>
+                <constraint firstItem="Tiy-Km-Kdz" firstAttribute="centerX" secondItem="RNe-Tk-oJ4" secondAttribute="centerX" id="yZt-iF-0Kz"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
