@@ -17,7 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.naviBarView.hidden = YES;
+    self.navBar.hidden = YES;
 }
 
 - (void)didReceiveMemoryWarning {

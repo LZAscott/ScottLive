@@ -32,6 +32,7 @@
     
     [self setAddAllChildController];
     [self.view addSubview:self.scrollView];
+    [self.view insertSubview:self.scrollView belowSubview:self.navBar];
 }
 
 - (void)setAddAllChildController {
@@ -41,23 +42,16 @@
 }
 
 - (void)setupNavi {
+    self.navItem.titleView = self.segmentCtrl;
     
-    [self.naviBarView addSubview:self.segmentCtrl];
-    
-    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [leftBtn setImage:[UIImage imageNamed:@"search_15x14"] forState:UIControlStateNormal];
-    self.leftView = leftBtn;
-    
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setImage:[UIImage imageNamed:@"head_crown_24x24"] forState:UIControlStateNormal];
-    [btn addTarget:self action:@selector(headCrownClick) forControlEvents:UIControlEventTouchUpInside];
-    self.rightView = btn;
+    self.navItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"search_15x14"] style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"head_crown_24x24"] style:UIBarButtonItemStylePlain target:self action:@selector(headCrownClick)];
 }
 
 - (void)headCrownClick {
     ScottCrownViewController *crownVC = [[ScottCrownViewController alloc] init];
     crownVC.urlStr = @"http://live.9158.com/Rank/WeekRank?Random=10";
-    crownVC.titleLabel.text = @"排行榜";
+    crownVC.navItem.title = @"排行榜";
     [self.navigationController pushViewController:crownVC animated:YES];
 }
 
@@ -96,7 +90,7 @@
 - (UIScrollView *)scrollView {
     if (_scrollView == nil) {
         _scrollView = [[UIScrollView alloc]init];
-        _scrollView.frame = CGRectMake(0, 64, CGRectGetWidth(self.view.frame), [UIScreen scott_screenHeight] - CGRectGetHeight(self.naviBarView.frame) - CGRectGetHeight(self.tabBarController.tabBar.frame));
+        _scrollView.frame = CGRectMake(0, 64, CGRectGetWidth(self.view.frame), [UIScreen scott_screenHeight] - 64 - 49);
         _scrollView.delegate = self;
         _scrollView.pagingEnabled = YES;//分页
         _scrollView.contentSize = CGSizeMake(_scrollView.frame.size.width * self.childViewControllers.count , 0);
@@ -106,8 +100,8 @@
         
     }
     return _scrollView;
-
 }
+
 - (HMSegmentedControl *)segmentCtrl {
     if (!_segmentCtrl) {
         _segmentCtrl = [[HMSegmentedControl alloc] initWithSectionTitles:@[@"最热",@"最新",@"关注"]];

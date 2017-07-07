@@ -30,7 +30,8 @@ static NSString *ScottProfileReuseIden = @"ScottProfileReuseIden";
     [super viewDidLoad];
     
 //    self.navigationItem.title = @"个人中心";
-    self.titleLabel.text = @"个人中心";
+//    self.titleLabel.text = @"个人中心";
+    self.navItem.title = @"个人中心";
     [self setupTableView];
 }
 
@@ -83,7 +84,7 @@ static NSString *ScottProfileReuseIden = @"ScottProfileReuseIden";
         default:
             break;
     }
-    baseVC.titleLabel.text = self.titleArr[indexPath.row];
+    baseVC.navItem.title = self.titleArr[indexPath.row];
     [self.navigationController pushViewController:baseVC animated:YES];
 }
 

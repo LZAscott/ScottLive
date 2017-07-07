@@ -22,6 +22,7 @@ PODS:
   - SDWebImage (3.8.2):
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
+  - STNavigationBar (0.1.1)
   - SVProgressHUD (2.0.3)
 
 DEPENDENCIES:
@@ -32,6 +33,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - SDWebImage
+  - STNavigationBar (~> 0.1.1)
   - SVProgressHUD
 
 SPEC CHECKSUMS:
@@ -42,8 +44,9 @@ SPEC CHECKSUMS:
   MJExtension: 5932755f451458eefa24239358817f8d291240c7
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  STNavigationBar: 055e8d2ae8a15e0a1d9d64f124711f3a1ce9bfc2
   SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
 
-PODFILE CHECKSUM: 8bf15980b666926267a71894965bf33ebfb4336d
+PODFILE CHECKSUM: ccf98385fdc27b7cebead4c2a8039eaad15e2a82
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0.beta.1

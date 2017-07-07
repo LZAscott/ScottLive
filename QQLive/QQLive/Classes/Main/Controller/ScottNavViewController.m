@@ -17,31 +17,13 @@
 
 @implementation ScottNavViewController
 
-//+ (void)initialize {
-//    UINavigationBar *bar = [UINavigationBar appearance];
-//    [bar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
-//    [bar setBackgroundImage:[UIImage imageNamed:@"navBar_bg_414x70"] forBarMetrics:UIBarMetricsDefault];
-//}
-
-
-
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
     // 去掉根控制器以及栈底控制器
     if (self.childViewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
         
-        
-        if ([viewController isKindOfClass:[ScottBaseViewController class]]) {
-            ScottBaseViewController *baseVC = (ScottBaseViewController *)viewController;
-            UIButton *backBtn = [UIButton scott_imageButton:@"back_9x16" backgroundImageName:@""];
-            [backBtn sizeToFit];
-            [backBtn addTarget:self action:@selector(popToParent) forControlEvents:UIControlEventTouchUpInside];
-            baseVC.leftView = backBtn;
-        }
-        
-        // 如果自定义返回按钮后, 滑动返回可能失效, 需要添加下面的代码
-//        __weak typeof(viewController)Weakself = viewController;
-//        self.interactivePopGestureRecognizer.delegate = (id)Weakself;
+        ScottBaseViewController *baseVC = (ScottBaseViewController *)viewController;
+        baseVC.navItem.leftBarButtonItem = [[UIBarButtonItem alloc] scott_initWithTitle:@"" fontSize:16 target:self action:@selector(popToParent) isBack:YES];
     }
     
     [super pushViewController:viewController animated:animated];

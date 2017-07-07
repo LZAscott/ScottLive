@@ -10,10 +10,7 @@
 
 @interface ScottBaseViewController : UIViewController
 
-@property (nonatomic, strong) UIView *leftView;
-@property (nonatomic, strong) UIView *rightView;
-
-@property (nonatomic, strong) UIView *naviBarView;
-@property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UINavigationBar *navBar;
+@property (nonatomic, strong) UINavigationItem *navItem;
 
 @end

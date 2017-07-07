@@ -12,6 +12,7 @@
 #import "ScottAlertView.h"
 #import "ScottShowAlertView.h"
 #import "UIView+ScottAlertView.h"
+#import <STNavigationBar/STNavigationBar.h>
 
 @interface AppDelegate ()
 

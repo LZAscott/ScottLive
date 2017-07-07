@@ -13,5 +13,6 @@ target ‘QQLive’ do
     #pod 'GPUImage', '~> 0.1.7' LFLiveKit里面包含GPUImage
     pod 'LFLiveKit', '~> 1.6'
     pod 'HMSegmentedControl', '~> 1.5.3'
+    pod 'STNavigationBar', '~> 0.1.1'
     
 end

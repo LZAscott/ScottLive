@@ -36,7 +36,7 @@
     rightBtn.backgroundColor = [UIColor blueColor];
     [rightBtn setTitle:@"添加好友" forState:UIControlStateNormal];
     [rightBtn addTarget:self action:@selector(addFriendClick:) forControlEvents:UIControlEventTouchUpInside];
-    self.rightView = rightBtn;
+    self.navItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
     
     _codeTextView = [[ScottTextView alloc] init];
     _codeTextView.backgroundColor = [UIColor grayColor];

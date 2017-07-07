@@ -10,6 +10,7 @@
 #import <WebKit/WebKit.h>
 #import "UIScreen+ScottExtension.h"
 #import "SVProgressHUD.h"
+#import <STNavigationBar/STNavigationBar.h>
 
 @interface ScottCrownViewController ()<UIScrollViewDelegate,WKNavigationDelegate>
 
